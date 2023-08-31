@@ -83,6 +83,35 @@
             window.location.href = './index.html'
         })
     </script>
+    <script>
+        const getWindowInfo = () => {
+            const windowInfo = {
+                width: window.innerWidth,
+                hight: window.innerHeight
+            }
+            console.log(windowInfo);
+            if (windowInfo.width > 877) {
+                // $(".header_title").show()
+                $(".header_list").css("display", "flex");
+                console.log(1);
+            }
+        };
+        // window.addEventListener('resize', getWindowInfo);
+        const debounce = (fn, delay) => {
+            let timer;
+            return function () {
+                if (timer) {
+                    clearTimeout(timer);
+                }
+                timer = setTimeout(() => {
+                    fn();
+                }, delay);
+            }
+        };
+        const cancalDebounce = debounce(getWindowInfo, 500);
+        window.addEventListener('resize', cancalDebounce);
+
+    </script>
     <script src="./js/main.js"></script>
 
 </body>
