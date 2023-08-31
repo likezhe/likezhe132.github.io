@@ -1,0 +1,150 @@
+body {
+    background-color: #fff;
+}
+
+.conUs {
+    text-align: center;
+    width: 100%;
+    padding: 10px 20%;
+    box-sizing: border-box;
+}
+
+.conUs h6 {
+    color: #f00;
+    margin-bottom: 0;
+}
+
+.conUs h1 {
+    margin-top: 0;
+}
+
+.conUsMsg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.conUsMsg div {
+    width: 30%;
+    border-radius: 2px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.conUsMsg img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.conUsMsg p:nth-child(2) {
+    color: #888;
+    font-size: 12px;
+}
+
+.userMSg {
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    /* word-wrap:; */
+    /* word-wrap: break-word; */
+}
+
+.userMSg input {
+    /* display: inline-block; */
+    width: 47%;
+    height: 40px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.userMSg textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+}
+
+.userMSg button {
+    width: 150px;
+    height: 40px;
+    background-color: #fe9900;
+    border: none;
+    margin-left: auto;
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+    margin: 20px 0 20px auto;
+    border-radius: 3px;
+}
+
+.contactUsMap {
+    position: relative;
+}
+
+#container {
+    width: 100%;
+    height: 450px;
+}
+
+.contactUsrch {
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.contactUsrch input {
+    border: none;
+    height: 40px;
+    padding-left: 10px;
+    background-color: #fff;
+}
+
+.contactUsrch input:focus {
+    outline: none;
+}
+
+.contactUsrch button {
+    border: none;
+    background-color: #fff;
+}
+
+.contactUsrch img {
+    width: 25px;
+    cursor: pointer;
+    vertical-align: middle;
+
+}
+
+@media screen and (max-width: 876px) {
+
+    .conUs {
+        padding: 10px 10%;
+    }
+
+    .conUsMsg div {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .userMSg {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .conUsMsg div {
+        width: 100%;
+    }
+
+    .userMSg input {
+        width: 95%;
+    }
+}

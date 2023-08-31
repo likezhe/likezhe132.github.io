@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/contactUs.css">
+</head>
+
+<body>
+    <script src="./js/jQuery.min.js"></script>
+    <script>
+        $(function () {
+            $('header').load('./header.html')
+        });
+        $(function () {
+            $('footer').load('./footer.html')
+        });
+    </script>
+    <div class="blogTop">
+        <header></header>
+        <div class="blogTopMain">
+            <div>
+                <h1>博客页面</h1>
+                <p>随时随地学习，加速您的未来。</p>
+            </div>
+            <div><span>家</span>>>联系我们</div>
+        </div>
+    </div>
+    <div class="conUs">
+        <h6>联系我们的团队</h6>
+        <h1>有什么问题吗？</h1>
+        <div class="conUsMsg">
+            <div>
+                <p><img src="./img/dizhi.png">地址</p>
+                <p>#302, 5th Floor, VHLY-2247<br>
+                    ek, Settlers Lane, New York.</p>
+            </div>
+            <div>
+                <p><img src="./img/emil.png">电子邮件</p>
+                <p>mailone@example.com<br>
+                    mailtwo@example.com
+                </p>
+            </div>
+            <div>
+                <p><img src="./img/tel.png">电话</p>
+                <p>+12324-016-695<br>
+                    +44224058.545
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="userMSg">
+        <form action="userMsg">
+            <input type="text" required placeholder="输入您的姓名*">
+            <input type="text" placeholder="输入主题">
+            <input type="email" required placeholder="输入您的电子邮箱*">
+            <input type="number" required placeholder="输入您的电话号码*">
+            <textarea name="userSerach" cols="30" rows="10" placeholder="在此处输入您的查询"></textarea>
+            <button>发送消息</button>
+        </form>
+    </div>
+    <div class="contactUsMap">
+        <div id="container"></div>
+        <div class="contactUsrch"><input type="text" id="searchInput" placeholder="搜索位置、公交站、地铁站"><button><img
+                    src="./img/searchy.png" onclick="search()"></button></div>
+    </div>
+    <script type="text/javascript">
+        window._AMapSecurityConfig = {
+            securityJsCode: "d660844160db20202b07a2a232d43938",
+        }
+    </script>
+    <script src="https://webapi.amap.com/loader.js"></script>
+    <script type="text/javascript">
+        AMapLoader.load({
+            key: "ef8c24c8da1795d20af7e01a8ee92c9d",       // 申请好的Web端开发者Key，首次调用 load 时必填
+            version: "2.0",                 // 指定要加载的 JSAPI 的版本，缺省时默认为 1.4.15
+        }).then((AMap) => {
+            const map = new AMap.Map('container');
+        }).catch((e) => {
+            console.error(e);  //加载错误提示
+        });
+
+        // var map = new AMap.Map('container', {
+        //     resizeEnable: true,
+        //     zoom: 11,//级别
+        //     center: [116.397428, 39.90923],//中心点坐标
+        //     viewMode: '3D'//使用3D视图
+        // });
+        // var auto = new AMap.Autocomplete({
+        //     input: "searchInput"
+        // });
+
+        // AMap.plugin('AMap.Autocomplete', function () {
+        //     // 实例化Autocomplete
+        //     var autoOptions = {
+        //         // input 为绑定输入提示功能的input的DOM ID
+        //         input: 'searchInput'
+        //     }
+        //     var autoComplete = new AMap.Autocomplete(autoOptions);
+        //     // 无需再手动执行search方法，autoComplete会根据传入input对应的DOM动态触发search
+        // })
+        function search() {
+            var keyword = document.getElementById('searchInput').value;
+            var placeSearch = new AMap.PlaceSearch({
+                map: map
+            });
+            placeSearch.search("ef8c24c8da1795d20af7e01a8ee92c9d");
+        }
+
+    </script>
+    <script src="./js/main.js"></script>
+    <footer></footer>
+
+
+</body>
+
+</html>

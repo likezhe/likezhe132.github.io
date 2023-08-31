@@ -1,0 +1,284 @@
+.detailsMain {
+    width: 30%;
+    margin: 30px auto;
+}
+
+.detailsMain>div:first-child img {
+    width: 100%;
+}
+
+.detailsman {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.detailsman img {
+    width: 16px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+.detailsman>div:first-child {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.detailsman>div:first-child img {
+    width: 100%;
+}
+
+.detailsman>div:nth-child(3) {
+    /* margin-left: 20px; */
+    margin: 0 20px;
+
+    color: #888;
+}
+
+.detailsMain p {
+    text-align: left;
+    word-break: break-all;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.bigEng {
+    padding: 20px 35px;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    margin: 20px 0;
+    font-weight: 800;
+
+}
+
+.bigEng p {
+    font-style: italic;
+    font-size: 25px;
+    color: #000;
+}
+
+.bigEng span {
+    font-size: 12px;
+    color: #aaa;
+    font-weight: normal;
+}
+
+.imgAndText {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgAndText div {
+    width: 48%;
+}
+
+.imgAndText div img {
+    width: 100%;
+}
+
+.imgAndText div:last-child {
+    /* white-space: nowrap; */
+    max-height: 160px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.share {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #aaa;
+}
+
+.share>div {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+
+}
+
+.share>div img {
+    width: 50%;
+}
+
+.share>div:first-child {
+    background-color: #3b5a88;
+}
+
+.share>div:nth-child(2) {
+    background-color: #55adec;
+}
+
+.share>div:nth-child(3) {
+    background-color: #de4e43;
+}
+
+.detailsBut {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #aaa;
+    font-weight: 800;
+}
+
+.detailsBut img {
+    width: 18px;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
+.detailsBut>div:last-child {
+    text-align: right;
+}
+
+.detailsBut>div:last-child img {
+    transform: rotate(180deg);
+}
+
+.detailsBut div div {
+    font-size: 14px;
+    color: #000;
+    font-weight: 800;
+}
+
+.chatMSg {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.headImg img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.textMsg {
+    width: 80%;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    padding: 30px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.textMsg h4 {
+    margin: 0;
+}
+
+.textMsg div {
+    font-size: 12px;
+    color: #888;
+
+}
+
+.textMsg span {
+    color: #e8b892;
+}
+
+.chatMSgMin {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textMsgMin {
+    padding: 0;
+    border: none;
+}
+
+.inputBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.inputBox div {
+    width: 48%;
+}
+
+.inputBox input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.inputBox textarea {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.inputBox input:focus {
+    outline: none;
+}
+
+.inputBox button {
+    width: 150px;
+    height: 40px;
+    background-color: #fe9900;
+    border: none;
+    margin-left: auto;
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+    margin: 20px 0 20px auto;
+    border-radius: 3px;
+    font-weight: 800;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .detailsMain {
+        width: 60%;
+    }
+
+    .headImg {
+        margin-right: 10px;
+    }
+
+    .inputBox>div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 876px) {
+    .detailsMain {
+        width: 80%;
+    }
+
+    .headImg {
+        margin-right: 10px;
+    }
+
+    .inputBox>div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

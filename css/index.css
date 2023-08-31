@@ -1,0 +1,647 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+.bg {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+.bg img {
+    filter: invert(1) hue-rotate(180deg);
+
+}
+
+
+.inedx_top {
+    width: 100%;
+    /* height: 1176px; */
+    height: 995px;
+    background-image: url(../img/topimg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.index_top_main {
+    width: 60%;
+    margin: 370px auto 0;
+    color: #fff;
+}
+
+.index_top_main p {
+    font-size: 70px;
+    width: 100%;
+    font-weight: 800;
+}
+
+.index_top_main div {
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.index_form {
+    width: 470px;
+    height: 370px;
+    margin-left: auto;
+    margin-right: 20%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 60px 20px 0;
+    border: 1px solid #ccc;
+    /* position: absolute;
+    left: 65%;
+    bottom: 14%;
+    transform: translateX(-50%); */
+}
+
+.index_form p {
+    margin: 30px 0 15px;
+    color: #888;
+}
+
+.index_form input {
+    width: 60%;
+    height: 40px;
+    border: 1px solid #999;
+    padding-left: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 auto 15px;
+}
+
+.index_form input:last-child {
+    background-color: #fe9900;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    padding-left: 0;
+}
+
+.minTitle {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 200px auto;
+}
+
+.minTitle div {
+    width: 30%;
+}
+
+.minTitle img {
+    width: 50px;
+}
+
+.minTitle h3 {
+    margin: 22px auto 30px;
+}
+
+.minTitle p {
+    color: #888;
+}
+
+/* index_aboutUs */
+.index_aboutUs {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.index_aboutUs_left {
+    width: 45%;
+}
+
+.index_aboutUs p:first-child {
+    color: #f00;
+    font-weight: 800;
+}
+
+.index_aboutUs p:nth-child(2) {
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.index_aboutUs p:nth-child(3) {
+    font-size: 25px;
+    margin: 70px 0 60px;
+}
+
+.index_aboutUs button {
+    background-color: #fe9900;
+    width: 180px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    font-size: 22px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.index_aboutUs_right {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.index_aboutUs_right div {
+    border-radius: 5px;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.index_aboutUs_right img {
+    width: 100%;
+    height: 100%;
+}
+
+.index_aboutUs_right>div {
+    width: 48%;
+    height: 625px;
+}
+
+.index_aboutUs_right>div:first-child div:first-child {
+    height: 60%;
+    margin-bottom: 20px;
+}
+
+.index_aboutUs_right>div:first-child div:last-child {
+    height: 35%;
+    /* margin-bottom: 10px; */
+}
+
+.index_aboutUs_right>div:last-child div:first-child {
+    height: 35%;
+    margin-bottom: 20px;
+}
+
+.index_aboutUs_right>div:last-child div:last-child {
+    height: 60%;
+}
+
+.index_aboutUs_right>div>div {
+    position: relative;
+    /* font-size: ; */
+}
+
+.index_aboutUs_right>div>div::after {
+    content: '';
+    width: 80%;
+    margin: 0 auto;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    color: #f00;
+    line-height: 42px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.index_aboutUs_right>div:first-child div:first-child::after {
+    content: "个人发展";
+}
+
+.index_aboutUs_right>div:first-child div:last-child::after {
+    content: "商";
+}
+
+.index_aboutUs_right>div:last-child div:first-child::after {
+    content: "创业";
+}
+
+.index_aboutUs_right>div:last-child div:last-child::after {
+    content: "摄影";
+}
+
+/* < ! -- Teacher num --> */
+.TeacherNum {
+    width: 100%;
+    padding: 0 19% 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+.TeacherNum>div:first-child {
+    width: 44%;
+}
+
+.TeacherNum img {
+    width: 100%;
+}
+
+.TeacherNumMain {
+    padding-top: 5%;
+    width: 49%;
+}
+
+.TeacherNumMain>div {
+    display: flex;
+    margin: 30px 0;
+}
+
+.TeacherNumMain p {
+    color: #f00;
+    font-size: 42px;
+    width: 57%;
+}
+
+
+
+.TeacherNumMain span {
+    color: #888;
+    font-size: 14px;
+}
+
+/* < !-- Popular Courses --> */
+.PopularCourses {
+    width: 100%;
+    padding: 120px 20%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.PopularCourses p {
+    color: #f00;
+    text-align: center;
+    font-size: 13px;
+}
+
+.PopularCourses h1 {
+    text-align: center;
+}
+
+
+.PopularCoursesMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 55px;
+
+}
+
+.PopularCoursesMain>div {
+    width: 24%;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ddd;
+    margin-bottom: 10px;
+}
+
+.PopularCoursesItem>div:first-child {
+    width: 100%;
+}
+
+.PopularCoursesItem>div:first-child img {
+    width: 100%;
+}
+
+.PopularCoursesItem>div:nth-child(2) {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 20px;
+    color: #fe9900;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+}
+
+.PopularCoursesItem>div:nth-child(2) img {
+    width: 18px;
+}
+
+.PopularCoursesItem h4 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.PopularCoursesItem>div:last-child {
+    width: 90%;
+    font-weight: 800;
+    color: #999;
+    margin: 0 auto 30px;
+}
+
+.PopularCoursesItem>div:last-child img {
+    width: 30px;
+    vertical-align: -7px;
+}
+
+.PopularCourses button {
+    border: none;
+    background-color: #fe9900;
+    width: 256px;
+    height: 70px;
+    font-size: 24px;
+    border-radius: 10px;
+    line-height: 70px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+/* 图片上面的红黄小标题 */
+.minRedYel_B {
+    position: relative;
+}
+
+.minRedYel_B::after {
+    content: 'Beginner';
+    height: 30px;
+    font-size: 11px;
+    padding: 0 8px;
+    background-color: #f00;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.minRedYel_B::before {
+    content: 'New';
+    height: 30px;
+    font-size: 11px;
+    padding: 0 8px;
+    background-color: #fe9900;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+/* < !-- 评论 --> */
+.review {
+    width: 100%;
+    padding: 85px 20%;
+    box-sizing: border-box;
+    background-color: #8f2b2b;
+    color: #fff;
+}
+
+.reviewMain {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.reviewMain>div {
+    width: 30%;
+}
+
+.review>p {
+    width: 100%;
+    text-align: center;
+}
+
+.review>h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reviewMain>div p {
+    text-align: left;
+    font-size: 14px;
+    /* font-weight: 800; */
+}
+
+.reviewMain>div h5 {
+    margin: 30px 0 0;
+}
+
+.reviewMain>div span {
+    color: #888;
+    font-size: 12px;
+}
+
+/* < !-- 加入无门 --> */
+.joinUs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.joinUs>div {
+    width: 50%;
+}
+
+.joinUs>div:first-child {
+    padding: 10% 3%;
+    box-sizing: border-box;
+}
+
+.joinUs h4:first-child {
+    color: #f00;
+    font-weight: 800;
+}
+
+.joinUs p {
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.joinUs h4 {
+    color: #888;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.joinUs input {
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.joinUs>div>div {
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 5px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: #fe9900;
+}
+
+.joinUs>div:last-child img {
+    width: 100%
+}
+
+@media screen and (max-width: 876px) {
+    .inedx_top {
+        height: 680px;
+    }
+
+    .index_top_main {
+        width: 80%;
+        margin: 200px auto 0;
+    }
+
+    .index_top_main p {
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .index_form {
+        width: 50%;
+        height: 50%;
+        padding: 30px 10px 0;
+    }
+
+    .index_form input {
+        width: 80%;
+    }
+
+    .index_top_main div {
+        margin-bottom: 0;
+
+    }
+
+    /* 最好和最参与的老师 */
+    .minTitle {
+        width: 80%;
+    }
+
+    .minTitle div {
+        width: 48%;
+        margin-bottom: 20px;
+
+    }
+
+    /* index_aboutUs */
+    .index_aboutUs {
+        width: 80%;
+        justify-content: left;
+    }
+
+    .index_aboutUs>div {
+        width: 100%;
+        /* margin: 0 auto; */
+        margin-bottom: 30px;
+    }
+
+    .index_aboutUs button {
+        width: 150px;
+        height: 60px;
+    }
+
+    /* < ! -- Teacher num --> */
+    .TeacherNum {
+        padding: 0 10% 50px;
+        display: block;
+    }
+
+    .TeacherNum>div:first-child {
+        width: 90%;
+    }
+
+    .TeacherNumMain {
+        width: 100%;
+    }
+
+    .TeacherNumMain p {
+        width: 30%;
+    }
+
+    /* < !-- Popular Courses --> */
+    .PopularCourses {
+        padding: 100px 10%;
+    }
+
+    .PopularCoursesMain>div {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+
+    /* < !-- 评论 --> */
+    .review {
+        padding: 75px 10%;
+    }
+
+    .reviewMain>div {
+        width: 48%;
+        /* margin: 0  */
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    /* < !-- 加入无门 --> */
+
+
+    .joinUs>div {
+        width: 100%;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 375px) {
+    .index_form {
+        width: 80%;
+        margin: 20px auto 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .minTitle div {
+        width: 100%;
+    }
+
+    .index_aboutUs_right {
+        flex-wrap: wrap;
+    }
+
+    .index_aboutUs_right div {
+        width: 100%;
+    }
+
+    .TeacherNumMain>div {
+        flex-wrap: wrap;
+    }
+
+    .PopularCoursesMain>div {
+        width: 100%;
+    }
+
+    .reviewMain>div {
+        width: 100%;
+    }
+}

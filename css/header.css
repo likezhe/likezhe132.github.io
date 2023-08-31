@@ -1,0 +1,218 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bg {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+.bg img {
+    filter: invert(1) hue-rotate(180deg);
+
+}
+
+.ag {
+    filter: invert(1) hue-rotate(180deg);
+
+}
+
+.cg {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color-burn;
+    ;
+}
+
+.header_main {
+    padding-top: 10px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header_title {
+    font-size: 25px;
+    font-weight: 800;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header_title img {
+    width: 40px;
+    /* height: 30px; */
+    vertical-align: middle;
+}
+
+.header_list {
+    color: #fff;
+    display: flex;
+    line-height: 36px;
+}
+
+.header_list div {
+    width: 70px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.header_list div img {
+    width: 20px;
+    height: 20px;
+    vertical-align: text-top;
+}
+
+.header_list div:nth-child(4) img {
+    vertical-align: middle;
+}
+
+.header_list div:nth-child(6) {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 0 10px;
+}
+
+.header_BG {
+    display: none;
+}
+
+.header_search {
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0%;
+    /* padding-top: 20%; */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    animation: inorto 0.6s;
+
+}
+
+.header_search div {
+    width: 600px;
+    border-radius: 5px;
+    height: 60px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 auto;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+.header_search input {
+    width: 85%;
+    height: 60px;
+    border: none;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.header_search input:focus {
+    outline: none;
+}
+
+.header_search img {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+@keyframes inorto {
+    from {
+        /* background: red; */
+        opacity: 0;
+    }
+
+    to {
+        /* background: yellow; */
+        opacity: 1;
+    }
+}
+
+@keyframes toroin {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.menu {
+    display: none;
+    height: 35px;
+    width: 50%;
+}
+
+.menu img {
+    width: 25px;
+    height: 25px;
+}
+
+.header_bgcolor {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 876px) {
+    .header_list {
+        display: none;
+        width: 100%;
+        padding: 0 10%;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .header_list div {
+        width: 100%;
+    }
+
+    .header_main {
+        width: 100%;
+        padding: 0 10%;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .menu {
+        /* display: block; */
+        display: flex;
+        justify-content: right;
+    }
+
+    .menu div {
+        margin-left: 10px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .menu div:last-child {
+        background-color: #ff9900;
+    }
+
+    .header_list>div:last-child {
+        display: none;
+    }
+
+    .header_list {
+        padding-bottom: 20px;
+    }
+}

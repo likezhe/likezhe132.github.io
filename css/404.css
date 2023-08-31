@@ -1,0 +1,74 @@
+body {
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+.four {
+    background-image: url(../img/fourBg.jpeg);
+    margin: auto;
+}
+
+.four div {
+    font-size: 180px;
+    background-color: #fff;
+    text-align: center;
+    font-weight: 900;
+    mix-blend-mode: screen;
+}
+
+.four_text {
+    width: 20%;
+    margin: 0 auto;
+    color: #888;
+    font-size: 13px;
+}
+
+.four_input {
+    width: 100%;
+    text-align: center;
+    margin: 30px auto 0;
+}
+
+.four_input input {
+    width: 15%;
+    border: none;
+    background-color: #eee;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.four_input button {
+    width: 4%;
+    background-color: #fe9900;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.backIndex {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 876px) {
+    .four_text {
+        width: 50%;
+    }
+
+    .four_input input {
+        width: 40%;
+    }
+
+    .four_input button {
+        width: 10%;
+    }
+}

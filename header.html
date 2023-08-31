@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/header.css">
+</head>
+
+<body>
+    <div class="header_main">
+        <div class="header_title">
+            <img src="./img/educator.png">教育者
+        </div>
+        <div class="menu">
+            <div>
+                <img src="./img/moon.png" class="NightPattern">
+            </div>
+            <div>
+                <img src="./img/menu.png">
+            </div>
+        </div>
+        <div class="header_list">
+            <a href="./index.html">
+                <div>家</div>
+            </a>
+            <a href="aboutUS.html">
+                <div>大约</div>
+            </a>
+            <a href="course.html">
+                <div>课程</div>
+            </a>
+            <a href="blog.html">
+                <div>&nbsp;页面&nbsp;<img src="./img/down.png"></div>
+            </a>
+            <a href="contactUs.html">
+                <div>联系</div>
+            </a>
+            <div><img src="./img/sreach.png">搜索</div>
+            <div><img src="./img/moon.png" class="NightPattern"></div>
+        </div>
+    </div>
+    <div class="header_BG">
+        <div class="header_search">
+            <div>
+                <input type="text" placeholder="请输入关键字" class="inp" maxlength="30"><img src="./img/searchy.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('.header_BG').click(function () {
+            $(this).fadeOut(500, function () {
+                $(this).hide();
+                document.body.style.overflow = 'auto';
+            })
+        });
+        $('.header_list div:nth-child(6)').click(function () {
+            var heightNum = $(window).height();
+            $('.header_search').height(heightNum);
+            // console.log(heightNum);
+            $('.header_BG').toggle();
+            document.body.style.overflow = 'hidden';
+        });
+        $('.header_search div').click(function (even) {
+            even.stopPropagation();
+        });
+        // 手机端效果
+        $(".menu div:last-child").click(function () {
+            if ($(this).find('img').attr('src') == './img/menu.png') {
+                $(this).find('img').attr('src', './img/close.png')
+            } else {
+                $(this).find('img').attr('src', './img/menu.png')
+            };
+            $(".header_list").toggle();
+            $(".header_main").toggleClass("header_bgcolor");
+
+        })
+    </script>
+    <script>
+        $('.header_title').click(function () {
+            window.location.href = './index.html'
+        })
+    </script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
