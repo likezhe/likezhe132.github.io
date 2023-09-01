@@ -97,12 +97,16 @@
 
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
     .footerMain {
         flex-wrap: wrap;
     }
 
     .footerItem {
-        width: 100%;
+        width: 49%;
+    }
+
+    .footerItem>div div {
+        margin: 0;
     }
 }

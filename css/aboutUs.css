@@ -393,7 +393,7 @@
 
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
     .aboutUsWCU>div:last-child>div {
         width: 100%;
     }
@@ -402,18 +402,76 @@
         width: 100%;
     }
 
-    .aboutUsBot>div:last-child {
-        flex-wrap: wrap;
-        justify-content: center;
+    .aboutUsTop {
+        padding: 10px 5% 50px;
     }
 
-    .aboutUsBot button:first-child {
-        /* margin-right: 0; */
+    .aboutUsTop>div:first-child {
+        font-size: 22px;
+    }
+
+    .aboutUsTop>div:last-child {
+        padding-top: 20px;
+    }
+
+    .aboutUsWCU {
+        padding: 10px 5% 50px;
+    }
+
+    .aboutUsWCU h6 {
+        font-size: 18px;
         margin: 10px 0;
     }
 
-    .aboutUsBot button {
-        width: 80%;
-        display: inline-block;
+    .aboutUsWCU>div:first-child {
+        font-size: 22px;
     }
+
+    .aboutUsWCU button {
+        width: 120px;
+        height: 36px;
+    }
+
+    .aboutUsWCU>div:last-child>div {
+        width: 49%;
+    }
+
+    .ourTeam {
+        padding: 20px 5%;
+    }
+
+    .ourTeam p {
+        font-size: 22px;
+    }
+
+    /* .ourTeamItem h4 {} */
+
+    .ourTeamItem>div {
+        width: 49%;
+    }
+
+    .ProgressText {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .ProgressBar {
+        padding: 20px 5%;
+    }
+
+    .ProgressText p {
+        font-size: 22px;
+    }
+
+    .aboutUsBot {
+        padding: 20px 5%;
+    }
+
+    .aboutUsBot button {
+        height: 40px;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
 }

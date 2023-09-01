@@ -139,12 +139,20 @@ body {
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
     .conUsMsg div {
         width: 100%;
     }
 
     .userMSg input {
         width: 95%;
+    }
+
+    .conUs h1 {
+        font-size: 22px;
+    }
+
+    #container {
+        height: 250px;
     }
 }

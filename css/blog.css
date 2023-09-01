@@ -74,8 +74,34 @@ body {
 
 }
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:375px) {
     .page_content pageCon {
-        width: 100%;
+        width: 49.5%;
     }
+
+    .blogTopMain {
+        width: 90%;
+    }
+
+    .blogTopMain div:first-child {
+        width: 60%;
+    }
+
+    .blogTopMain div:last-child {
+        font-size: 14px;
+    }
+
+    .page_content>div {
+        padding: 50px 5% 20px;
+    }
+
+    .blogMainPage {
+        padding-bottom: 10px !important;
+    }
+
+    .blogMainPage h5 {
+        margin: 10px 0;
+    }
+
+
 }

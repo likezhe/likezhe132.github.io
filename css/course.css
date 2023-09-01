@@ -38,3 +38,30 @@
     transform: translateY(-40px);
 
 }
+
+@media screen and (max-width: 375px) {
+    .index_aboutUs {
+        padding: 50px 5% 20px;
+
+    }
+
+    .index_aboutUs_right>div {
+        height: 220px;
+    }
+
+    .index_aboutUs_right>div:first-child div:last-child {
+        height: 100%;
+    }
+
+    .index_aboutUs_right>div:last-child div:first-child {
+        transform: translateY(0);
+        margin-bottom: 5px;
+        height: 49%;
+    }
+
+    .index_aboutUs_right>div:last-child div:last-child {
+        height: 49%;
+        transform: translateY(0);
+    }
+
+}

@@ -84,13 +84,14 @@
         })
     </script>
     <!-- <script>
+        let oldNum = 876
         const getWindowInfo = () => {
             const windowInfo = {
                 width: window.innerWidth,
                 hight: window.innerHeight
             }
             console.log(windowInfo);
-            if (windowInfo.width > 877) {
+            if (windowInfo.width - oldNum > 0) {
                 // $(".header_title").show()
                 $(".header_list").css("display", "flex");
                 console.log(1);

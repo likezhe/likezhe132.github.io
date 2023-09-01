@@ -19,8 +19,7 @@ body {
 
 .inedx_top {
     width: 100%;
-    /* height: 1176px; */
-    height: 995px;
+    height: 890px;
     background-image: url(../img/topimg.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -52,18 +51,19 @@ body {
 .index_form {
     width: 470px;
     height: 370px;
-    margin-left: auto;
-    margin-right: 20%;
+    /* margin-left: auto; */
+    /* margin-right: 20%; */
     text-align: center;
     background-color: #fff;
     border-radius: 5px;
     box-sizing: border-box;
     padding: 60px 20px 0;
     border: 1px solid #ccc;
-    /* position: absolute;
-    left: 65%;
-    bottom: 14%;
-    transform: translateX(-50%); */
+    position: absolute;
+    /* left: 65%; */
+    right: 20%;
+    bottom: -125px;
+    /* transform: translateX(-50%); */
 }
 
 .index_form p {
@@ -87,6 +87,15 @@ body {
     border: none;
     cursor: pointer;
     padding-left: 0;
+}
+
+
+.line_bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
 }
 
 .minTitle {
@@ -172,7 +181,7 @@ body {
 
 .index_aboutUs_right>div {
     width: 48%;
-    height: 625px;
+    height: 520px;
 }
 
 .index_aboutUs_right>div:first-child div:first-child {
@@ -262,7 +271,7 @@ body {
 
 .TeacherNumMain p {
     color: #f00;
-    font-size: 42px;
+    font-size: 38px;
     width: 57%;
 }
 
@@ -276,7 +285,7 @@ body {
 /* < !-- Popular Courses --> */
 .PopularCourses {
     width: 100%;
-    padding: 120px 20%;
+    padding: 70px 20%;
     box-sizing: border-box;
     background-color: #fff;
 }
@@ -455,7 +464,7 @@ body {
 }
 
 .joinUs>div:first-child {
-    padding: 10% 3%;
+    padding: 70px 3%;
     box-sizing: border-box;
 }
 
@@ -615,14 +624,48 @@ body {
 
 @media screen and (max-width: 375px) {
     .index_form {
-        width: 80%;
         margin: 20px auto 0;
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
+    .inedx_top {
+        height: 600px;
+    }
+
+    .index_top_main {
+        margin-top: 100px;
+    }
+
+    .index_top_main {
+        width: 90%;
+    }
+
+    .index_form {
+        width: 90%;
+        right: 5%;
+        bottom: -83px;
+    }
+
+    .minTitle {
+        width: 90%;
+        margin: 110px auto 60px;
+    }
+
     .minTitle div {
-        width: 100%;
+        width: 49%;
+    }
+
+    .minTitle h3 {
+        margin: 0 auto 15px;
+    }
+
+    .minTitle p {
+        font-size: 12px;
+    }
+
+    .index_aboutUs {
+        width: 90%;
     }
 
     .index_aboutUs_right {
@@ -633,15 +676,115 @@ body {
         width: 100%;
     }
 
+    .index_aboutUs p:nth-child(2) {
+        font-size: 24px;
+    }
+
+    .index_aboutUs p:nth-child(3) {
+        margin: 20px 0 30px;
+        font-size: 25px;
+    }
+
+    .index_aboutUs button {
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .index_aboutUs_right>div {
+        width: 49%;
+        height: 370px;
+    }
+
+    .TeacherNum {
+        /* width: 90%; */
+        padding: 0 5% 30px;
+    }
+
     .TeacherNumMain>div {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+    }
+
+    .TeacherNumMain p {
+        font-size: 25px;
+    }
+
+    .TeacherNumMain>div h2 {
+        font-size: 16px;
+    }
+
+    .TeacherNumMain span {
+        font-size: 12px;
     }
 
     .PopularCoursesMain>div {
         width: 100%;
     }
 
-    .reviewMain>div {
-        width: 100%;
+
+
+    .PopularCourses {
+        padding: 50px 5%;
     }
+
+    .PopularCourses p {
+        font-size: 12px;
+    }
+
+    .PopularCourses h1 {
+        font-size: 22px;
+    }
+
+    .PopularCoursesMain>div {
+        width: 49%;
+    }
+
+    .PopularCoursesItem>div:nth-child(2) {
+        font-size: 18px;
+        margin: 5px auto;
+    }
+
+    .PopularCoursesItem>div:nth-child(2) img {
+        width: 10px;
+    }
+
+    .PopularCoursesItem h4 {
+        font-size: 14px;
+    }
+
+    .PopularCoursesItem>div:last-child {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .PopularCourses button {
+        margin: 0 auto;
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+    }
+
+    .review {
+        padding: 30px 5%;
+    }
+
+    .reviewMain>div {
+        width: 49%;
+    }
+
+    .reviewMain>div p {
+        font-size: 13px;
+    }
+
+    .reviewMain>div h5 {
+        margin: 15px 0 0;
+        font-size: 12px;
+    }
+
+    .joinUs p {
+        font-size: 22px;
+    }
+
+
 }
