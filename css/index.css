@@ -81,6 +81,14 @@ body {
     margin: 0 auto 15px;
 }
 
+.index_form input:hover {
+    border-color: #fe9900;
+}
+
+.ApplyNow:hover {
+    transform: scale(1.02);
+}
+
 .index_form input:last-child {
     background-color: #fe9900;
     font-weight: 800;
@@ -110,6 +118,35 @@ body {
     width: 30%;
 }
 
+.minTitle>div:hover {
+    cursor: pointer;
+    animation: rightAndleft 0.2s;
+}
+
+@keyframes rightAndleft {
+    0% {
+        transform: translateX(-5px);
+    }
+
+    25% {
+        transform: translateX(5px);
+
+    }
+
+    50% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translate(5);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+
+}
+
 .minTitle img {
     width: 50px;
 }
@@ -118,8 +155,18 @@ body {
     margin: 22px auto 30px;
 }
 
+.minTitle h3:hover {
+    text-shadow: 6px 3px 3px #888;
+    transform: scale(1.02);
+}
+
 .minTitle p {
     color: #888;
+}
+
+.minTitle p:hover {
+    text-shadow: 6px 3px 3px #888;
+    transform: scale(1.02);
 }
 
 /* index_aboutUs */
@@ -151,6 +198,13 @@ body {
     margin: 70px 0 60px;
 }
 
+.index_aboutUs p:hover {
+    /* animation: ; */
+    transform: scale(1.02);
+    text-shadow: 6px 3px 3px #888;
+
+}
+
 .index_aboutUs button {
     background-color: #fe9900;
     width: 180px;
@@ -160,6 +214,10 @@ body {
     font-size: 22px;
     font-weight: 800;
     cursor: pointer;
+}
+
+.index_aboutUs_left button:hover {
+    transform: scale(1.02);
 }
 
 .index_aboutUs_right {
@@ -206,6 +264,20 @@ body {
 .index_aboutUs_right>div>div {
     position: relative;
     /* font-size: ; */
+}
+
+.index_aboutUs_right>div>div:hover::after {
+    animation: CardText 1s;
+}
+
+@keyframes CardText {
+    from {
+        bottom: 100%;
+    }
+
+    to {
+        bottom: 20px;
+    }
 }
 
 .index_aboutUs_right>div>div::after {
@@ -255,6 +327,10 @@ body {
     width: 44%;
 }
 
+.TeacherNum>div:first-child:hover {
+    animation: rightAndleft 0.2s;
+}
+
 .TeacherNum img {
     width: 100%;
 }
@@ -275,12 +351,31 @@ body {
     width: 57%;
 }
 
+.TeacherNumMain p:hover {
+    transform: scale(1.02);
+    text-shadow: 6px 3px 3px #888;
+
+}
+
 
 
 .TeacherNumMain span {
     color: #888;
     font-size: 14px;
 }
+
+.TeacherNum h2:hover {
+    text-shadow: 6px 3px 3px #888;
+    transform: scale(1.02);
+}
+
+.TeacherNum span:hover {
+    text-shadow: 6px 3px 3px #888;
+    transform: scale(1.02);
+
+}
+
+
 
 /* < !-- Popular Courses --> */
 .PopularCourses {
@@ -296,8 +391,20 @@ body {
     font-size: 13px;
 }
 
+.PopularCourses p:hover {
+    text-shadow: 6px 3px 3px #888;
+    transform: scale(1.02);
+
+}
+
 .PopularCourses h1 {
     text-align: center;
+}
+
+.PopularCourses h1:hover {
+    text-shadow: 6px 3px 3px #888;
+    transform: scale(1.02);
+
 }
 
 
@@ -316,6 +423,39 @@ body {
     box-shadow: 0 0 5px #ddd;
     margin-bottom: 10px;
 }
+
+.PopularCoursesItem:hover {
+    position: relative;
+}
+
+@keyframes myanm {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
+
+}
+
+.PopularCoursesItem:hover:after {
+    content: 'beginner';
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: myanm 0.5s;
+}
+
 
 .PopularCoursesItem>div:first-child {
     width: 100%;
@@ -370,6 +510,10 @@ body {
     cursor: pointer;
 }
 
+.PopularCourses button:hover {
+    transform: scale(1.02);
+}
+
 /* 图片上面的红黄小标题 */
 .minRedYel_B {
     position: relative;
@@ -412,6 +556,27 @@ body {
     box-sizing: border-box;
     background-color: #8f2b2b;
     color: #fff;
+}
+
+.review:hover {
+    animation: beheight 5s infinite;
+
+}
+
+@keyframes beheight {
+
+    0% {
+        background-color: #8f2f2f;
+
+    }
+
+    50% {
+        background-color: #000;
+    }
+
+    100% {
+        background-color: #8f2f2f;
+    }
 }
 
 .reviewMain {
@@ -471,6 +636,16 @@ body {
 .joinUs h4:first-child {
     color: #f00;
     font-weight: 800;
+}
+
+.joinUs h4:hover {
+    transform: scale(1.02);
+    text-shadow: 6px 3px 3px #888;
+}
+
+.joinUs p:hover {
+    transform: scale(1.02);
+    text-shadow: 6px 3px 3px #888;
 }
 
 .joinUs p {
@@ -550,6 +725,8 @@ body {
         margin-bottom: 20px;
 
     }
+
+
 
     /* index_aboutUs */
     .index_aboutUs {

@@ -13,7 +13,6 @@
     color: #b02427;
     font-size: 13px;
     margin-bottom: 0;
-
 }
 
 /* .aboutUsTop div {
@@ -24,6 +23,11 @@
     width: 60%;
     font-size: 33px;
     font-weight: 900;
+}
+
+.aboutUsTop>div:hover {
+    transform: scale(1.02);
+    text-shadow: 6px 3px 3px #888;
 }
 
 .aboutUsTop>div:last-child {
@@ -56,6 +60,25 @@
     color: #888;
 }
 
+.aboutUsWCU h6:hover {
+    transform: scale(1.02);
+    text-shadow: 6px 3px 3px #888;
+}
+
+.aboutUsWCU p:hover {
+    transform: scale(1.02);
+    text-shadow: 6px 3px 3px #888;
+}
+
+.aboutUsWCU span:hover {
+    transform: scale(1.02);
+    text-shadow: 6px 3px 3px #888;
+}
+
+.readMore:hover {
+    transform: scale(1.02);
+}
+
 .aboutUsWCU button {
     width: 150px;
     height: 40px;
@@ -85,6 +108,16 @@
     border-radius: 3px;
     margin-bottom: 5px;
     padding-bottom: 40px;
+    overflow: hidden;
+
+}
+
+.aboutUsWCU>div:last-child>div:hover div {
+    animation: myCardDiv 1s;
+}
+
+.aboutUsWCU>div:last-child>div:hover {
+    animation: myCard 2s;
 }
 
 .aboutUsWCU>div:last-child div div {
@@ -102,6 +135,36 @@
     width: 50%;
 }
 
+@keyframes myCard {
+
+    0% {
+        background-color: #fff;
+        color: #fff;
+
+    }
+
+    20% {
+        background-color: #FE9900;
+        color: #fff;
+    }
+
+    100% {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+@keyframes myCardDiv {
+    from {
+        transform: translateY(-200%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
+
 /* < !-- 我们的团队 --> */
 
 .ourTeam {
@@ -117,10 +180,20 @@
     margin-bottom: 0;
 }
 
+.ourTeam h6:hover {
+    transform: scale(1.02);
+    text-shadow: 6px 3px 3px #b02427;
+}
+
 .ourTeam p {
     font-size: 33px;
     font-weight: 800;
     margin-top: 0;
+}
+
+.ourTeam p:hover {
+    transform: scale(1.02);
+    text-shadow: 6px 3px 3px #888;
 }
 
 .ourTeamItem {
@@ -131,7 +204,40 @@
 
 .ourTeamItem>div {
     width: 24%;
+
 }
+
+.ourTeamItem>div:hover {
+    /* opacity: 1; */
+    transform: scale(1.02);
+    /* animation: showTExt 1s; */
+}
+
+/* .ourTeamItem>div ::after {
+    content: '知名导演，2008年奥斯卡最佳导演奖获得者';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding-top: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    opacity: 0;
+    color: #fff;
+}
+
+@keyframes showTExt {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
+
+} */
+
 
 .ourTeamItem h4 {
     margin-bottom: 0;
@@ -270,14 +376,30 @@
     margin-bottom: 0;
 }
 
+.ProgressText h6:hover {
+    transform: scale(1.02);
+    text-shadow: 6px 3px 3px #888;
+}
+
 .ProgressText p {
     margin-top: 0;
     font-size: 33px;
 }
 
+.ProgressText p:hover {
+    text-shadow: 6px 3px 3px #888;
+    transform: scale(1.02);
+}
+
 .ProgressText div {
     font-size: 12px;
     color: #888;
+}
+
+.ProgressText div:hover {
+    text-shadow: 6px 3px 3px #888;
+    transform: scale(1.02);
+
 }
 
 .aboutUsBot {
@@ -311,6 +433,10 @@
     line-height: 20px;
     cursor: pointer;
     vertical-align: bottom;
+}
+
+.aboutUsBot button:hover {
+    transform: scale(1.02);
 }
 
 .aboutUsBot button:first-child {

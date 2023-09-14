@@ -5,6 +5,7 @@
 	<meta charset="utf-8" />
 	<title>教育者</title>
 	<link rel="stylesheet" href="./css/index.css">
+
 </head>
 
 <body>
@@ -28,14 +29,13 @@
 		<div class="index_form">
 			<h3>申请入学</h3>
 			<p>让他更简单</p>
-			<form action="msg">
-				<input type="text" required placeholder="您的名字"><br />
-				<input type="email" required placeholder="您的电子邮箱"><br />
-				<input type="button" value="立即申请">
+			<form name="msg">
+				<input type="text" id="myname" value="" required="required" placeholder="您的名字" maxlength="12"><br />
+				<input type="email" id="email" value="" required="required" placeholder="您的电子邮箱"><br />
+				<input type="button" value="立即申请" class="ApplyNow">
 			</form>
 
 		</div>
-		<!-- <div class="line_bottom"></div> -->
 	</div>
 
 	<div class="minTitle">
@@ -126,7 +126,7 @@
 		<div class="PopularCoursesMain">
 			<div class="PopularCoursesItem">
 				<div class="minRedYel_B">
-					<img src="./img/pop02.png" alt="">
+					<img src="./img/pop02.png">
 				</div>
 				<div>
 					<div>$53.00</div>
@@ -145,7 +145,7 @@
 			</div>
 			<div class="PopularCoursesItem">
 				<div>
-					<img src="./img/pop02.png" alt="">
+					<img src="./img/pop02.png">
 				</div>
 				<div>
 					<div>$53.00</div>
@@ -164,7 +164,7 @@
 			</div>
 			<div class="PopularCoursesItem">
 				<div class="minRedYel_B">
-					<img src="./img/pop04.png" alt="">
+					<img src="./img/pop04.png">
 				</div>
 				<div>
 					<div>$53.00</div>
@@ -183,7 +183,7 @@
 			</div>
 			<div class="PopularCoursesItem">
 				<div>
-					<img src="./img/pop02.png" alt="">
+					<img src="./img/pop02.png">
 				</div>
 				<div>
 					<div>$53.00</div>
@@ -248,12 +248,14 @@
 			<h4>加入我们</h4>
 			<p>免费加入我们，获取即时电子邮件更新！</p>
 			<h4>订阅并首先收到有关最新更新和优惠的通知！</h4>
-			<input type="email" placeholder="您的电子邮箱地址" />
-			<div>订阅</div>
+			<input type="email" id="myemail" placeholder="您的电子邮箱地址" />
+			<div class="SubscribeTo">订阅</div>
 		</div>
 		<div><img src="./img/joinUs.png"></div>
 	</div>
 	<script>
+		const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
 		$('.index_aboutUs_left').click(function () {
 			window.location.href = "./course.html"
 		})
@@ -263,7 +265,72 @@
 		$('.index_top_main div').click(function () {
 			window.location.href = "./404.html"
 		})
+		$('.ApplyNow').click(function () {
+			let name = $('#myname').val()
+			let email = $('#email').val()
+			if (name == '') {
+				$('#myname').css({ 'border': '2px solid #C64141', 'animation': 'rightAndleft 0.2s' })
+				alert('请输入您的名字')
+				setTimeout(function () {
+					$(('#myname')).css('animation', 'none')
+				}, 200)
+
+			} else if (email == '') {
+				alert('请输入您的邮箱')
+				$('#email').css({ 'border': '2px solid #C64141', 'animation': 'rightAndleft 0.2s' })
+				setTimeout(function () {
+					$(('#email')).css('animation', 'none')
+				}, 200)
+			} else if (name != '' && emailRegex.test(email)) {
+				alert("申请已提交")
+				$('#myname').val('')
+				$('#email').val('')
+			} else {
+				alert('请输入正确的邮箱格式')
+				$('#email').css({ 'border': '2px solid #C64141', 'animation': 'rightAndleft 0.2s' })
+				setTimeout(function () {
+					$(('#email')).css('animation', 'none')
+				}, 200)
+			}
+			console.log(name);
+		})
+
+		$('.SubscribeTo').click(function () {
+			let email = $("#myemail").val()
+			console.log(
+				email
+			);
+			if (email == '') {
+				// clearTimeout(timer);
+				$("#myemail").css({ 'animation': 'rightAndleft 0.2s', 'border': '2px solid #C64141' })
+				setTimeout(function () {
+					$("#myemail").css('animation', 'none')
+				}, 200)
+			}
+			else if (emailRegex.test(email)) {
+				alert('订阅成功！')
+			} else {
+				alert('请输入正确的邮箱！')
+			}
+		})
+		const inputElement = document.getElementById('myemail');
+		inputElement.addEventListener('blur', () => {
+			// 在这里编写处理失焦事件的代码
+			$('#myemail').css('border', '1px solid #eee')
+		});
+		const inputElementmyname = document.getElementById('myname');
+		inputElementmyname.addEventListener('blur', () => {
+			// 在这里编写处理失焦事件的代码
+			$('#myname').css('border', '1px solid #999')
+		});
+		const inputElementemail = document.getElementById('email');
+		inputElementemail.addEventListener('blur', () => {
+			// 在这里编写处理失焦事件的代码
+			$('#email').css('border', '1px solid #999')
+		});
 	</script>
+
+
 	<script src="./js/main.js"></script>
 
 	<footer></footer>

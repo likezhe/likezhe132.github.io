@@ -25,6 +25,14 @@
     display: flex;
 }
 
+.footerItem>div:hover {
+    color: #FE9900;
+}
+
+/* .footerItem p:hover {
+    color: #FE9900;
+} */
+
 .footerItem>div div {
     width: 21px;
     height: 21px;
